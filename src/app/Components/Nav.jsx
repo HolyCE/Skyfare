@@ -106,12 +106,12 @@ export default function Nav() {
   <ul className={`lg:hidden flex flex-col w-full px-[5%] gap-6 bg-[#f7f7f7] shadow-md absolute left-0 overflow-hidden transition-all duration-500 ease-in-out ${
     isOpen ? "max-h-[700px] top-full mt-0 opacity-100 py-6" : "max-h-0 opacity-0 py-0 top-full"
   }`}>
-    <li><a href="#" className="font-[500] hover:text-black block w-full">Home</a></li>
-    <li><a href="#" className="font-[500] hover:text-black block w-full">About</a></li>
-    <li><a href="#" className="font-[500] hover:text-black block w-full">Tours</a></li>
-    <li><a href="#" className="font-[500] hover:text-black block w-full">Faq</a></li>
-    <li><a href="#" className="font-[500] hover:text-black block w-full">Blog</a></li>
-    <li><a href="#" className="font-[500] hover:text-black block w-full">Contact</a></li>
+    <li><a href="/" className="font-[500] hover:text-black block w-full">Home</a></li>
+    <li><a href="/About" className="font-[500] hover:text-black block w-full">About</a></li>
+    <li><a href="/Tours" className="font-[500] hover:text-black block w-full">Tours</a></li>
+    <li><a href="/Faq" className="font-[500] hover:text-black block w-full">Faq</a></li>
+    <li><a href="/Blog" className="font-[500] hover:text-black block w-full">Blog</a></li>
+    <li><a href="/Contacts" className="font-[500] hover:text-black block w-full">Contact</a></li>
     
     {/* Login/Sign Up in mobile menu - aligned with other items */}
     <li className="pt-4 border-t border-gray-300">
