@@ -70,7 +70,7 @@ export default function Nav() {
     
     {/* Logo For Mobile - Left aligned */}
     <div className="lg:hidden flex logo text-2xl uppercase font-semibold">
-      <a href="#" className="unbounded-font">Tu<span className="unbounded-font">ra</span></a>
+      <a href="/" className="unbounded-font">Sky<span className="unbounded-font">fare</span></a>
     </div>  
 
     {/* Desktop Menu */}
