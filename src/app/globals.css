@@ -1,26 +1,213 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-sora);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --heading-color: #193555;
+  --text-color: #697e8a;
+  --black: #000;
+  --white: #fff;
+  --btn-color: #193555;
+}
+
+@layer utilities {
+  .sora-font {
+    font-family: var(--font-sora), sans-serif;
+  }
+
+  .unbounded-font {
+    font-family: var(--font-unbounded), sans-serif;
+  }
+}
+
+/*Navbar*/
+.nav-top{
+  color: var(--white)!important;
+}
+.nav-menu li a.active{
+  color: var(--black)!important;
+}
+.navbar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 77%);
+  z-index: -1;
+}
+.navbar.scrolled:after {
+  background: none !important;
+  height: 0;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url(/images/majestic-mountain-peak-emerges-from-swirling-clouds-dawn.jpg) no-repeat center center/cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.hero-content h1 {
+  background: linear-gradient(0deg, #697e8a 10%, #fff 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000082;
+}
+
+.travel-item{
+  height: 350px; 
+}
+.travel-item::after{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,187,45,0) 100%);
+  z-index: 0;
+}
+
+/*Tour details*/
+.section-banner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url(https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&h=1080&fit=crop);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.section-banner::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000be;
+}
+.section-list{
+  position:absolute;
+  bottom: 30px;
+  left: 12%;
+}
+.contact-form input{
+  height: 45px;
+  padding-left: 10px;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: #193555;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #0f243d;
+}
+
+.contact-banner{
+  height: 700px;
+  background: url(../../public/images/Contact-banner-bg.webp);
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.contact-banner::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000082;
+  opacity: 0.6;
+  z-index: -1;
+} 
+
+@media (max-width: 767px){
+  .contact-banner{
+    height: 500px;
+  }
+}
+.tour-icons i{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ee07e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  height: 550px;
+  background-image: url(./assets/banner.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 50px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(43, 43, 43, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+.play-btn {
+  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 1rem;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+    .banner {
+        height: 450px;
+    }
 }

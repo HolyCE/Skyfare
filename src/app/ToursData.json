@@ -1,0 +1,66 @@
+[
+    {
+       "id": "1",
+       "title": "Phuket",
+       "location": "Thailand",
+       "price": "$ 40",
+       "Images": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop",
+       "mainImage": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&h=800&fit=crop"
+    },
+    {
+        "id": "2",
+        "title": "Bali",
+        "location": "Indonesia",
+        "price": "$ 50",
+        "Images": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop",
+        "mainImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&h=800&fit=crop"
+    },
+    {
+        "id": "3",
+        "title": "Santorini",
+        "location": "Greece",
+        "price": "$ 60",
+        "Images": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&h=600&fit=crop",
+        "mainImage": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=1200&h=800&fit=crop"
+    },
+    {
+        "id": "4",
+        "title": "Maui",
+        "location": "Hawaii",
+        "price": "$ 70",
+        "Images": "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=800&h=600&fit=crop",
+        "mainImage": "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=1200&h=800&fit=crop"
+    },
+    {
+        "id": "5",
+        "title": "Kyoto",
+        "location": "Japan",
+        "price": "$ 80",
+        "Images": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&h=600&fit=crop",
+        "mainImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200&h=800&fit=crop"
+    },
+    {
+        "id": "6",
+        "title": "Rome",
+        "location": "Italy",
+        "price": "$ 90",
+        "Images": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&h=600&fit=crop",
+        "mainImage": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&h=800&fit=crop"
+    },
+    {
+        "id": "7",
+        "title": "Barcelona",
+        "location": "Spain",
+        "price": "$ 100",
+        "Images": "https://picsum.photos/id/1043/800/600",
+        "mainImage": "https://picsum.photos/id/1043/1200/800"
+    },
+    {
+        "id": "8",
+        "title": "Sydney",
+        "location": "Australia",
+        "price": "$ 110",
+        "Images": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&h=600&fit=crop",
+        "mainImage": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1200&h=800&fit=crop"
+    }
+]
